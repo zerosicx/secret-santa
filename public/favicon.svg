@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Santa Hat -->
+  <path d="M10 42 L30 8 L54 42 Z" fill="#dc2626" stroke="#b91c1c" stroke-width="2"/>
+  <!-- White trim/brim -->
+  <rect x="8" y="40" width="48" height="8" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <!-- Pom pom -->
+  <circle cx="30" cy="10" r="5" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+</svg>
+
