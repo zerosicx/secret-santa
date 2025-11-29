@@ -68,7 +68,7 @@ export function ParticipantBoard({
           <h2 id="grid-heading" className="text-base sm:text-lg font-semibold text-slate-800">
             Participant Hat
           </h2>
-           <div className="flex flex-wrap items-center gap-2">
+           <div className="flex flex-wrap items-center gap-2 ml-auto">
           {phase === Phase.SETUP && (
             <div className="relative group">
               <button
@@ -77,7 +77,8 @@ export function ParticipantBoard({
                 onClick={handleReady}
                 disabled={isReadyDisabled}
               >
-                <span>{getReadyButtonLabel()}</span>
+                <span className="hidden sm:inline">{getReadyButtonLabel()}</span>
+                <span className="sm:hidden">🎲</span>
               </button>
               {isReadyDisabled && (
                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 px-3 py-1.5 bg-slate-900 text-white text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity z-10">
@@ -92,7 +93,8 @@ export function ParticipantBoard({
               type="button"
               onClick={handleEdit}
             >
-              Edit Participants
+              <span className="hidden sm:inline">Edit Participants</span>
+              <span className="sm:hidden">✏️</span>
             </button>
           )}
           <button
@@ -100,7 +102,8 @@ export function ParticipantBoard({
             type="button"
             onClick={handleReset}
           >
-            Reset &amp; Clear All
+            <span className="hidden sm:inline">Reset &amp; Clear All</span>
+            <span className="sm:hidden">🔄</span>
           </button>
         </div>
       </div>
